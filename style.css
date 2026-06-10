@@ -1,0 +1,389 @@
+/* ==========================================
+   STILE GENERALE & VARIABILI (Stile Ferrari)
+   ========================================== */
+:root {
+    --primary-blue: #001A3E;    /* Blu Scuro Fondale (colore Ferrari adattato) */
+    --racing-blue: #00AEEF;     /* Azzurro Elettrico per i dettagli dinamici */
+    --pure-white: #FFFFFF;
+    --luxury-dark: #0a0f18;     /* Nero/Blu profondo per gli sfondi */
+    --text-gray: #a0aec0;
+    --font-main: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+}
+
+body {
+    background-color: var(--luxury-dark);
+    color: var(--pure-white);
+    overflow-x: hidden;
+}
+
+/* NAVBAR SCOMPARSA / FISSA */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    background: linear-gradient(to bottom, rgba(0, 26, 62, 0.9), rgba(0,0,0,0));
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo-area a {
+    color: var(--pure-white);
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 4px;
+    font-size: 1.1rem;
+}
+
+.logo-area span {
+    color: var(--racing-blue);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 35px;
+}
+
+.nav-links a {
+    color: var(--pure-white);
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--racing-blue);
+}
+
+/* HERO VIDEO/IMAGE SECTION */
+.hero-gateway {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    overflow: hidden;
+}
+
+.hero-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transform: scale(1.02);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 30% 50%, rgba(0, 26, 62, 0.6) 0%, rgba(10, 15, 24, 0.9) 100%);
+    z-index: 2;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 3;
+    max-width: 650px;
+}
+
+.hero-text .tagline {
+    font-size: 0.9rem;
+    color: var(--racing-blue);
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+/* BOTTONI PREMIUM */
+.btn-premium {
+    display: inline-block;
+    padding: 15px 40px;
+    border: 1px solid var(--pure-white);
+    color: var(--pure-white);
+    text-decoration: none;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-premium:hover {
+    background-color: var(--pure-white);
+    color: var(--primary-blue);
+    transform: translateY(-2px);
+}
+
+/* SEZIONE GRIGLIA EDITORIALE (Stile Ferrari Gateway) */
+.editorial-grid {
+    padding: 100px 60px;
+    background-color: var(--luxury-dark);
+}
+
+.section-intro {
+    margin-bottom: 60px;
+    max-width: 800px;
+}
+
+.section-intro h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.grid-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.editorial-card {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.editorial-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1;
+}
+
+.editorial-card:hover img {
+    transform: scale(1.04);
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 26, 62, 0.95) 0%, rgba(0,0,0,0) 70%);
+    z-index: 2;
+}
+
+.card-content {
+    position: relative;
+    z-index: 3;
+    padding: 50px;
+}
+
+.card-content h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.card-content p {
+    color: var(--text-gray);
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* SPECIFICHE TECNICHE (Pagina Nisida) */
+.tech-specs {
+    padding: 100px 60px;
+    background-color: #05080c;
+}
+
+.specs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.spec-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.spec-label {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: var(--text-gray);
+}
+
+.spec-value {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--racing-blue);
+}
+
+/* FOOTER */
+footer {
+    padding: 60px;
+    background-color: #020406;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-gray);
+    letter-spacing: 1px;
+}
+
+
+/* ==========================================================================
+   MEDIA QUERIES - OTTIMIZZAZIONE RESPONSIVE (SMARTPHONE & TABLET)
+   ========================================================================== */
+
+@media (max-width: 992px) {
+    /* Ottimizzazioni per Tablet e schermi intermedi */
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+    .grid-split, .specs-container {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* 1. Navbar Mobile */
+    .navbar {
+        padding: 20px;
+        flex-direction: column; /* Incolonna Logo e Link */
+        gap: 15px;
+        background: rgba(0, 26, 62, 0.95); /* Sfondo più solido per leggibilità */
+        position: relative; /* Rende la pagina più fluida su mobile evitando che copra la Hero */
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap; /* Se i link sono lunghi vanno a capo ordinatamente */
+        gap: 10px;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        padding: 0 10px;
+    }
+
+    .nav-links a {
+        font-size: 0.75rem;
+    }
+
+    /* 2. Hero Section */
+    .hero-gateway {
+        height: calc(100vh - 110px); /* Sottrae lo spazio occupato dalla navbar mobile */
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-overlay {
+        /* Centriamo il gradiente per il testo centrato */
+        background: radial-gradient(circle at center, rgba(0, 26, 62, 0.7) 0%, rgba(10, 15, 24, 0.95) 100%);
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem; /* Ridimensionato per non spaccare lo schermo */
+        letter-spacing: 0px;
+    }
+
+    .hero-text .tagline {
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+    }
+
+    /* 3. Griglia Editoriale (Diventa a 1 colonna) */
+    .editorial-grid {
+        padding: 60px 20px;
+    }
+
+    .section-intro h2 {
+        font-size: 1.8rem;
+    }
+
+    .grid-split {
+        grid-template-columns: 1fr; /* Le card vanno una sotto l'altra */
+    }
+
+    .editorial-card {
+        height: 450px; /* Riduzione altezza per non rendere la pagina infinita */
+    }
+
+    .card-content {
+        padding: 30px;
+    }
+
+    .card-content h3 {
+        font-size: 1.4rem;
+    }
+
+    /* 4. Specifiche Tecniche (Diventa a 1 colonna) */
+    .tech-specs {
+        padding: 60px 20px;
+    }
+
+    .specs-container {
+        grid-template-columns: 1fr; /* Tabella specifiche e foto/testo si incolonnano */
+        gap: 40px;
+    }
+    
+    .spec-row {
+        padding: 18px 0;
+    }
+
+    .spec-label {
+        font-size: 0.75rem;
+    }
+
+    .spec-value {
+        font-size: 0.95rem;
+    }
+
+    /* 5. Footer */
+    footer {
+        padding: 40px 20px;
+    }
+}

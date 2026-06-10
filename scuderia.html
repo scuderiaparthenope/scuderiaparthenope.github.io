@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Scuderia | Parthenope Racing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .scuderia-section { padding: 120px 60px 60px 60px; background-color: var(--luxury-dark); }
+        .team-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 50px; }
+        .dept-card { background: linear-gradient(145deg, #0d1522, #070b12); border: 1px solid rgba(255, 255, 255, 0.03); padding: 40px; border-radius: 4px; transition: all 0.3s ease; }
+        .dept-card:hover { border-color: var(--racing-blue); transform: translateY(-5px); }
+        .dept-title { font-size: 1.4rem; color: var(--pure-white); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-weight: 800; }
+        .dept-role { color: var(--racing-blue); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 20px; }
+        .dept-card p { color: var(--text-gray); font-size: 0.9rem; line-height: 1.7; }
+        .scuderia-hero { height: 50vh; position: relative; display: flex; align-items: center; padding-left: 60px; overflow: hidden; }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-area">
+            <a href="index.html">PARTHENOPE <span>RACING</span></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nisida.html">La Monoposto</a></li>
+            <li><a href="sponsor.html">I Nostri Partner</a></li>
+            <li><a href="scuderia.html" class="active">La Scuderia</a></li>
+            <li><a href="stem.html">Campionato STEM</a></li>
+        </ul>
+    </header>
+
+    <section class="scuderia-hero">
+        <div class="hero-overlay" style="background: linear-gradient(to top, var(--luxury-dark), rgba(0,26,62,0.7));"></div>
+        <img src="immagini/gruppo.jpeg" alt="Team Background" class="hero-media">
+        <div class="hero-text" style="position: relative; z-index: 3;">
+            <p class="tagline">Dietro la Monoposto</p>
+            <h1>Il Nostro Team</h1>
+        </div>
+    </section>
+
+    <main class="scuderia-section">
+        <div class="section-intro">
+            <h2>L'Unione fa la Forza</h2>
+            <p style="color: var(--text-gray);">Il Parthenope Racing Team è organizzato esattamente come una vera scuderia di Formula 1. Il nostro organigramma si divide in 3 dipartimenti strategici in cui ogni membro (da 3 a 6 componenti) unisce le proprie competenze trasversali.</p>
+        </div>
+
+        <div class="team-container">
+            <div class="dept-card">
+                <div class="dept-title">Dipartimento Ingegneria</div>
+                <div class="dept-role">R&D, CAD & Simulazione</div>
+                <p>È il cervello tecnico del team. Si occupa della modellazione tridimensionale della monoposto Nisida tramite software CAD. Il suo compito principale è ottimizzare i flussi d'aria e testare virtualmente la vettura tramite analisi CFD per garantire la minima resistenza all'avanzamento.</p>
+            </div>
+
+            <div class="dept-card">
+                <div class="dept-title">Dipartimento Produzione</div>
+                <div class="dept-role">Manifattura & CNC</div>
+                <p>Il braccio operativo che trasforma i bit in realtà. Questo reparto analizza i materiali, gestisce le tolleranze di fabbricazione e si occupa della realizzazione fisica dei componenti tramite macchine a controllo numerico (CNC), frese e stampanti 3D di precisione per le ali e i cerchioni.</p>
+            </div>
+
+            <div class="dept-card">
+                <div class="dept-title">Business & Marketing</div>
+                <div class="dept-role">Brand, Comunicazione & Sponsor</div>
+                <p>La voce e l'immagine pubblica del team. Cura l'identità visiva della scuderia, gestisce le pubbliche relazioni, scrive il Business Plan ufficiale richiesto dai giudici e stringe accordi commerciali con le aziende partner, garantendo i fondi necessari per finanziare il progetto.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Parthenope Racing Team - STEM Racing Italy. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

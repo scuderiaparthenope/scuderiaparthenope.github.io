@@ -1,0 +1,203 @@
+HTML
+<!DOCTYPE HTML>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner & Sponsor | Parthenope Racing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Stili specifici per la griglia degli sponsor in stile scuderia F1 */
+        .sponsor-section {
+            padding: 120px 60px 60px 60px;
+            background-color: var(--luxury-dark);
+        }
+        
+        .sponsor-tier-title {
+            font-size: 1.2rem;
+            color: var(--racing-blue);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 10px;
+            font-weight: 800;
+            margin-top: 40px;
+        }
+
+        .sponsor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .sponsor-card {
+            background: linear-gradient(145deg, #0d1522, #070b12);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            padding: 40px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .sponsor-card:hover {
+            border-color: var(--racing-blue);
+            transform: translateY(-5px);
+        }
+
+        .sponsor-logo-placeholder {
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 25px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 20px;
+        }
+
+        .sponsor-logo-placeholder h3 {
+            font-size: 1.6rem;
+            letter-spacing: 2px;
+            color: var(--pure-white);
+            text-transform: uppercase;
+        }
+
+        .sponsor-role-tag {
+            display: inline-block;
+            align-self: flex-start;
+            padding: 5px 12px;
+            background-color: rgba(0, 174, 239, 0.1);
+            color: var(--racing-blue);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            border-radius: 2px;
+        }
+
+        .sponsor-card p {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-area">
+            <a href="index.html">PARTHENOPE <span>RACING</span></a>
+        </div>
+        <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="nisida.html">La Monoposto</a></li>
+    <li><a href="sponsor.html" class="active">I Nostri Partner</a></li>
+    <li><a href="scuderia.html">La Scuderia</a></li>
+    <li><a href="stem.html">Campionato STEM</a></li>
+</ul>
+    </header>
+
+    <main class="sponsor-section">
+        <div class="section-intro">
+            <p style="color: var(--racing-blue); letter-spacing: 3px; text-transform: uppercase; font-size: 0.8rem; font-weight: 700; margin-bottom: 10px;">Network Ufficiale</p>
+            <h2>I Partner del Progetto</h2>
+            <p style="color: var(--text-gray);">La monoposto Nisida e l'identità del Parthenope Racing Team prendono vita grazie al supporto strategico, tecnologico e logistico dei nostri partner ufficiali.</p>
+        </div>
+
+        <h3 class="sponsor-tier-title">Technical Partners</h3>
+        <div class="sponsor-grid">
+            
+            <div class="sponsor-card">
+                <div>
+                    <div class="sponsor-logo-placeholder">
+                        <h3>ANSYS</h3>
+                    </div>
+                    <div class="sponsor-role-tag">Simulazione Ingegneristica</div>
+                    <p>Leader mondiale nella creazione di modelli virtuali predittivi. La suite Ansys ha permesso al nostro reparto corse di simulare il comportamento fluido-dinamico di Nisida in tempo reale, abbattendo la necessità di costosi prototipi fisici e perfezionando l'aerodinamica delle ali prima di scendere in pista.</p>
+                </div>
+            </div>
+
+            <div class="sponsor-card">
+                <div>
+                    <div class="sponsor-logo-placeholder">
+                        <h3>ESSS</h3>
+                    </div>
+                    <div class="sponsor-role-tag">CAE & Supporto Specialistico</div>
+                    <p>Multinazionale leader nel software ingegneristico e Ansys Apex Channel Partner in Italia. ESSS ha affiancato la nostra scuderia offrendo formazione avanzata e consulenza specialistica sui software CAE, permettendo ai nostri studenti di operare con metodologie di calcolo identiche a quelle della vera Formula 1.</p>
+                </div>
+            </div>
+
+            <div class="sponsor-card">
+                <div>
+                    <div class="sponsor-logo-placeholder">
+                        <h3>AMBIENTE SPA</h3>
+                    </div>
+                    <div class="sponsor-role-tag">Eco-Merchandising & Sostenibilità</div>
+                    <p>Il cuore ecologico della scuderia. Ambiente Spa ha fornito al team i materiali sostenibili ad impatto zero per tutto il nostro merchandising ufficiale: dalle borracce in alluminio riciclabile fino alle maglie e alle eco tote-bag utilizzate durante gli eventi e le fiere espositive della competizione.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h3 class="sponsor-tier-title">Brand & Logistics Partners</h3>
+        <div class="sponsor-grid">
+
+            <div class="sponsor-card">
+                <div>
+                    <div class="sponsor-logo-placeholder">
+                        <h3>GAME ORBIT</h3>
+                    </div>
+                    <div class="sponsor-role-tag">Tech Gaming & Sim Racing</div>
+                    <p>Sala giochi ad alta tecnologia che ha messo a disposizione del team il proprio know-how digitale. Game Orbit ci ha supportato nello sviluppo del comparto di intrattenimento del brand e nei test dei riflessi digitali dei nostri piloti, unendo il mondo del sim racing professionistico alla nostra scuderia.</p>
+                </div>
+            </div>
+
+            <div class="sponsor-card">
+                <div>
+                    <div class="sponsor-logo-placeholder">
+                        <h3>BRUSCIANO GROUP</h3>
+                    </div>
+                    <div class="sponsor-role-tag">Sviluppo Strutturale & Logistica</div>
+                    <p>Partner logistico fondamentale per l'allestimento e la gestione delle infrastrutture del team. Brusciano Group ha supportato la scuderia nella pianificazione dei trasporti dei materiali pesanti verso i circuiti di gara e nella fornitura di componenti strutturali per lo stand espositivo del team.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h3 class="sponsor-tier-title">Institutional Partners</h3>
+        <div class="sponsor-grid">
+            
+            <div class="sponsor-card">
+                <div>
+                    <div class="sponsor-logo-placeholder">
+                        <h3>LICEO FERMI (AVERSA)</h3>
+                    </div>
+                    <div class="sponsor-role-tag">Main Institutional Sponsor</div>
+                    <p>La scuola che ha acceso i motori del nostro sogno. Fornendoci le risorse didattiche, lo spazio operativo all'interno dei laboratori e la possibilità stessa di iscriverci e gareggiare, il Liceo scientifico E. Fermi di Aversa si conferma il pilastro istituzionale in cui coltiviamo il nostro futuro nelle discipline STEM.</p>
+                </div>
+            </div>
+
+            <div class="sponsor-card">
+                <div>
+                    <div class="sponsor-logo-placeholder">
+                        <h3>STEM RACING ITALY</h3>
+                    </div>
+                    <div class="sponsor-role-tag">Ente Organizzatore</div>
+                    <p>L'ente ufficiale e la piattaforma competitiva nazionale che ci permette di scendere in pista. Definendo i regolamenti tecnici e mettendo a disposizione il tracciato rettilineo standardizzato di 20 metri e i sistemi di lancio ad aria compressa, trasforma lo studio teorico in pura adrenalina da corsa.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Parthenope Racing Team - STEM Racing Italy. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
